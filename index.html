@@ -1,0 +1,41 @@
+<!--
+时间：2020/2/3
+作者：搬砖小哥
+github：https://github.com/bzxg-space
+接口来自网络：https://mubu.com/doc/MyiFnpwKuT
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>短网址生成</title>
+		<meta name="author" content="搬砖小哥"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<h3>短网址生成  <span id="flag">(◔◡◔)ready</span></h3>
+		<form action="xxx.action" method="post" name="dwz">
+			<input type="text" id="long_url" placeholder="请输入/粘贴网址" required />
+			<div id="choice">
+				<input class="radio" type="radio" name="way" value="t" checked>
+				<span>t.cn</span>&nbsp;&nbsp;
+				<input class="radio" type="radio" name="way" value="dwz">
+				<span>dwz.cn</span>&nbsp;&nbsp;
+				<input class="radio" type="radio" name="way" value="mrw">
+				<span>mrw.so</span>
+			</div>
+			<input class="btn" type="submit" onclick="ajax();" value="生成" />
+			<input class="btn" type="reset" value="重置" onclick="init();" />
+			<input id="short_url" style="font-size:8px;width:80%;border:solid 1px;margin:10px auto;font-size:14px;" />
+			<input class="btn" type="button" value="复制" onclick="copy_url();" />
+			<input class="btn" type="button" value="访问" onclick="into_url();" />
+		</form>
+		<iframe name="rf" id="rf" src="about:blank" style="display:none;"></iframe>
+		<footer>
+			短网址生成&nbsp;by 搬砖小哥&nbsp;20/2/3
+		</footer>
+		<script type="text/javascript" src="js/copy.js"></script>
+		<script type="text/javascript" src="js/toast.js"></script>
+		<script type="text/javascript" src="js/api.js"></script>
+	</body>
+</html>

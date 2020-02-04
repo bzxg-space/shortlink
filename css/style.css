@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.12em;
+}
+
+h3 {
+	text-align: center;
+	margin: 15px;
+	letter-spacing: 0.2em;
+}
+
+input {
+	display: block;
+	width: 80%;
+	height: 30px;
+	margin: 10px auto;
+}
+
+form #choice {
+	text-align: center;
+	height: 20px;
+	margin: 10px auto;
+}
+
+form #choice span {
+	font-size: 15px;
+}
+
+.radio {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+}
+
+#long_url {
+	text-align: center;
+	font-size: 14px;
+}
+
+.btn {
+	display: block;
+	font-size: 15px;
+	color: white;
+	letter-spacing: 0.15em;
+	width: 80%;
+	height: 45px;
+	text-align: center;
+	margin: 15px auto 5px;
+	border: none;
+	border-radius: 8px;
+	background: #00a4ff;
+}
+
+.btn:hover{
+	background: rgba(0,164,255,0.6);
+}
+#copy {
+	display: block;
+	width: 80%;
+	height: 45px;
+	margin: 10px auto;
+	border: none;
+	background: #00a4ff;
+	color: white;
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+#flag {
+	color: gray;
+	font-size: 12px;
+}
+
+footer {
+	height: 35px;
+	color: darkgray;
+	line-height: 35px;
+	text-align: center;
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width:420px) {
+	input {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	input {
+		max-width: 450px;
+	}
+}
+
+@media screen and (min-width:769px) {
+	input {
+		max-width: 600px;
+	}
+}
